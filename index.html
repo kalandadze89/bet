@@ -126,22 +126,23 @@ font-family: 'Montserrat', sans-serif;
   display: block;
   margin: auto;
   width: 40%;
-  margin-top: 100px;
+  margin-top: 3em;
   
 }
 .title>img{
   margin: auto;
   display: block;
+  width: 70%
 ;
   
 }
 .steps{
-    display: flex;
-    justify-content: center;
-    padding-top: ;
+
 }
 .steps>img{
-    max-width: 600px;
+  display: block;
+    margin: auto;
+    width: 50%;
 }
 .btn{
     display: block;
@@ -189,24 +190,26 @@ table {
   }
   
   .accordion-item {
-    border: 1px solid #000000;
-    border-radius: 5px;
+    /* border: 1px solid #000000; */
+    border-radius: 10px;
   }
   
   .accordion-header {
-    background-color: #7c747467;
+    background-color: #D9D9D9;
     padding: 1rem;
     cursor: pointer;
     display: flex;
   justify-content: space-between;
   align-items: center;
+  border-radius: 10px;
+  color: #ffff;
   }
   
   .accordion-content {
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.3s ease-out;
-    background-color: rgba(61, 62, 62, 0.299);
+    /* background-color: rgba(61, 62, 62, 0.299); */
   }
   
   .accordion-item.active .accordion-content {
@@ -221,10 +224,13 @@ table {
   
   .accordion-item.active .accordion-icon {
     transform: rotate(45deg);
+    
   }
   .accordion-icon {
     font-weight: bold;
     margin-left: auto;
+    font-size: 40px;
+    color: #5AC4FF;
   }
   
   .charecters>img{
@@ -238,6 +244,7 @@ table {
   height: 549px;
 
 }
+@media (min-width: 1200px)
 </style>
 <script>
     const accordionItems = document.querySelectorAll('.accordion-item');
